@@ -1,0 +1,32 @@
+// Pallettes
+$color-1: #70b3fc;
+$color-2: #eaf4ff;
+$color-3: #ed9763;
+
+// Fonts
+$main-font: 'Fenix', serif;
+
+
+// General
+
+header{
+  background-color: $color-1;
+  font-family: $main-font;
+}
+
+body{
+    background-color: $color-2;
+    font-family: $main-font;
+}
+
+footer{
+  background-color: $color-1;
+  font-family: $main-font;
+}
+
+// Groups
+
+H2{ 
+  color: $color-1
+}
+
