@@ -1,7 +1,8 @@
 // Pallettes
-$color-1: #70b3fc;
-$color-2: #eaf4ff;
-$color-3: #ed9763;
+$color-1: #808dce;
+$color-2: #c4c8de;
+$color-3: #636ea8;
+$color-4: #ed9763;
 
 // Fonts
 $main-font: 'Fenix', serif;
@@ -9,24 +10,40 @@ $main-font: 'Fenix', serif;
 
 // General
 
-header{
-  background-color: $color-1;
-  font-family: $main-font;
-}
-
-body{
-    background-color: $color-2;
+@media screen and (min-width:900px){
+  .content{
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+    grid-template-columns: repeat(3,1fr);
     font-family: $main-font;
+  }
+
+  .header{
+    grid-column: 1/ span 3;
+    background-color: $color-1;
+    color: $color-2;
+  }
+
+  .main{
+    grid-column: 1 / span 3;
+    grid-row: 5/ span 3;
+    background-color: $color-2;
+    color: $color-3;
+  }
+
+  .footer{
+    grid-row: 6/7;
+    grid-column: 1/ span 3;
+    background-color: $color-1;
+    color: $color-2;
+  }
 }
 
-footer{
-  background-color: $color-1;
-  font-family: $main-font;
-}
 
 // Groups
 
 H2{ 
-  color: $color-1
+  color: $color-1;
 }
+
 
