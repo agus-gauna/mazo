@@ -1,30 +1,45 @@
-@media screen and (min-width: 900px) {
-  .content {
-    display: grid;
-    grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
-    grid-template-columns: repeat(3, 1fr);
-    font-family: "Fenix", serif;
-  }
-  .header {
-    grid-column: 1/span 3;
-    background-color: #808dce;
-    color: #c4c8de;
-  }
-  .main {
-    grid-column: 1/span 3;
-    grid-row: 5/span 3;
-    background-color: #c4c8de;
-    color: #636ea8;
-  }
-  .footer {
-    grid-row: 6/7;
-    grid-column: 1/span 3;
-    background-color: #808dce;
-    color: #c4c8de;
-  }
-}
 H2 {
-  color: #808dce;
+  color: #3e56d1;
+}
+
+a {
+  text-decoration: none;
+  color: #c4c8de;
+}
+
+.nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 6fr 6fr 6fr;
+}
+
+.header {
+  background-color: #3e56d1;
+  color: #c4c8de;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  font-family: "Fenix", serif;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: 1fr 80px;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: "Fenix", serif;
+  text-align: center;
+  background-color: #c4c8de;
+  color: #636ea8;
+}
+
+.main {
+  padding: 20px;
+  grid-column: 1/span 4;
 }
 
 /*# sourceMappingURL=style.css.map */
