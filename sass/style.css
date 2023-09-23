@@ -1,4 +1,11 @@
-H2 {
+h2 {
+  font-size: 30px;
+  padding: 20px 0 10px 0;
+  color: #3e56d1;
+}
+
+h3 {
+  padding: 20px 0 0 0;
   color: #3e56d1;
 }
 
@@ -7,24 +14,31 @@ a {
   color: #c4c8de;
 }
 
-.nav ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 6fr 6fr 6fr;
+.img_externa {
+  background-image: url("/UTILITIES/rosca.png");
+  background-size: 100%;
+  padding: 2em;
 }
 
-.header {
+header {
   background-color: #3e56d1;
-  color: #c4c8de;
+  padding: 4px 0;
+  font-family: "Fenix", serif;
 }
 
-.nav {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 10px;
-  margin: auto;
-  text-align: center;
-  font-family: "Fenix", serif;
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  background-color: #3e56d1;
+  font-weight: bold;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+  list-style: none;
 }
 
 .content {
@@ -32,13 +46,14 @@ a {
   grid-template-rows: 1fr 80px;
   grid-template-columns: repeat(4, 1fr);
   font-family: "Fenix", serif;
-  text-align: center;
-  background-color: #c4c8de;
+  text-align: left;
+  background-color: #e9eaee;
   color: #636ea8;
 }
 
 .main {
-  padding: 20px;
+  font-size: 20px;
+  padding: 10px 400px 10px 220px;
   grid-column: 1/span 4;
 }
 

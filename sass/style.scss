@@ -1,0 +1,77 @@
+// Pallettes
+$color-1: #3e56d1;
+$color-2: #e9eaee;
+$color-3: #636ea8;
+$color-4: #ed9763;
+
+// Fonts
+$main-font: 'Fenix', serif;
+
+// G E N E R A L
+
+
+h2{ 
+  font-size: 30px;
+  padding: 20px 0 10px 0;
+  color: $color-1;
+}
+
+h3{ 
+  padding: 20px 0 0 0;
+  color: $color-1;
+}
+
+a{
+  text-decoration: none;
+  color: #c4c8de;
+}
+
+
+// H E A D E R
+
+.img_externa{
+  background-image: url("/UTILITIES/rosca.png");
+  background-size: 100%;
+  padding: 2em;
+}
+
+header{
+    background-color: $color-1;
+    padding: 4px 0;
+    font-family: $main-font;
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  background-color: $color-1;
+  font-weight: bold;
+}
+
+header nav ul li{
+  display: inline-block;
+  padding: 0 20px;
+  list-style: none;
+}
+
+
+
+// B O D Y 
+
+  .content{
+    display: grid;
+    grid-template-rows: 1fr 80px;
+    grid-template-columns: repeat(4,1fr);
+    font-family: $main-font;
+    text-align: left;
+    background-color: $color-2;
+    color: $color-3;
+  }
+
+  .main{
+    font-size: 20px;
+    padding: 10px 400px 10px 220px;
+    grid-column: 1 / span 4;
+  }
